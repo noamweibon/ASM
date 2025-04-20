@@ -1,3 +1,9 @@
+; Before writing any code it's better to introduce some notions
+; rax for register a extended is used to store the result of arithmetic and logical operations
+; rdi for register destination index is used to pass the first argument to functions
+; rsi for register source index is used to pass the second argument to functions and for certain system calls.
+
+
 ;First we need the data section
 ;Here to initiate variable or write a prompt with the value
 
@@ -5,6 +11,7 @@ section.data
   prompt db 'Type a value', 0  
   prompt_len equ $ - prompt  
   
+
 
 ;The bss section is used to reserve uninitialized memory
 section.bss  
